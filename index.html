@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teste Substack — Portugal, Balanço Social</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+
+      background:
+        radial-gradient(
+          ellipse at 42% 105%,
+          rgba(83, 210, 235, 0.38) 0%,
+          rgba(83, 210, 235, 0.15) 24%,
+          transparent 52%
+        ),
+        radial-gradient(
+          ellipse at 100% 100%,
+          rgba(235, 145, 115, 0.22) 0%,
+          transparent 40%
+        ),
+        #eeeeee;
+    }
+
+    .newsletter-section {
+      width: 100%;
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* Move todo o conjunto um pouco para baixo */
+      padding-top: 220px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .newsletter-content {
+      width: 100%;
+      max-width: 1160px;
+
+      display: grid;
+      grid-template-columns: 300px 480px;
+      gap: 90px;
+      align-items: start;
+      justify-content: center;
+    }
+
+    /* LEFT SIDE */
+
+    .newsletter-copy {
+      padding-top: 2px;
+    }
+
+    .newsletter-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      border: 1.5px solid #1c1c1c;
+      padding: 7px 12px;
+
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+
+      margin-bottom: 20px;
+    }
+
+    .newsletter-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #d43212;
+      display: inline-block;
+    }
+
+    .newsletter-copy h1 {
+      margin: 0;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 43px;
+      line-height: 0.98;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    /* SUBSTACK */
+
+    .substack-container {
+      width: 480px;
+    }
+
+    .substack-container iframe {
+      display: block;
+      width: 480px;
+      height: 150px;
+      border: 0;
+      background: transparent;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      .newsletter-section {
+        padding: 120px 30px 60px;
+        align-items: flex-start;
+      }
+
+      .newsletter-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .substack-container {
+        width: 100%;
+      }
+
+      .substack-container iframe {
+        width: 100%;
+        max-width: 480px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="newsletter-section">
+
+    <div class="newsletter-content">
+
+      <div class="newsletter-copy">
+
+        <div class="newsletter-label">
+          <span class="newsletter-dot"></span>
+          Newsletter
+        </div>
+
+        <h1>
+          Mantenha-se<br>
+          atualizado
+        </h1>
+
+      </div>
+
+      <div class="substack-container">
+
+        <iframe
+          src="https://ptbalancosocial.substack.com/embed?transparent=1"
+          width="480"
+          height="150"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
