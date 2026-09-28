@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Protótipo frontend da nova área de Dados do Portugal, Balanço Social." />
+  <title>Dados — Portugal, Balanço Social</title>
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="#" aria-label="Social Equity Initiative — início">
+        <img src="assets/SocialEquityInitiative.png" alt="Social Equity Initiative — Knowledge-driven progress" />
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#">Portugal, Balanço Social</a>
+        <a href="#">Relatórios</a>
+        <a class="is-active" href="#">Dados</a>
+        <a href="#">Infografias</a>
+        <a href="#">Media</a>
+        <a href="#">Sobre Nós</a>
+      </nav>
+      <button class="icon-button" type="button" aria-label="Pesquisar no site" title="Pesquisar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="explorerView" class="view">
+      <section class="hero hero-data" aria-labelledby="dadosTitle">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-target" aria-hidden="true">
+          <div class="hero-target-inner"></div>
+        </div>
+        <div class="hero-left-mark" aria-hidden="true"></div>
+        <div class="hero-right-card" aria-hidden="true">
+          <div class="hero-u-mark"></div>
+        </div>
+
+        <h1 id="dadosTitle" class="hero-title">Dados</h1>
+
+        <div class="hero-intro">
+          <p>Explore os indicadores usados nas análises do Portugal, Balanço Social. Pesquise diretamente ou percorra os temas até encontrar a informação que procura.</p>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
+  <div class="footer-gradient-zone">
+    <section class="newsletter-section" aria-labelledby="newsletterTitle">
+      <div class="newsletter-inner">
+        <div class="newsletter-heading">
+          <div class="newsletter-label"><span aria-hidden="true"></span> NEWSLETTER</div>
+          <h2 id="newsletterTitle">Mantenha-se<br>Atualizado</h2>
+        </div>
+
+        <form class="newsletter-signup" action="#" method="post" onsubmit="return false;">
+          <label class="newsletter-field">
+            <span>NOME <b aria-hidden="true">*</b></span>
+            <input type="text" name="name" autocomplete="name" aria-label="Nome" />
+          </label>
+
+          <label class="newsletter-field">
+            <span>EMAIL <b aria-hidden="true">*</b></span>
+            <input type="email" name="email" autocomplete="email" aria-label="Email" />
+          </label>
+
+          <button class="newsletter-submit" type="submit">ENVIAR</button>
+
+          <label class="newsletter-consent">
+            <input type="checkbox" name="privacy" />
+            <span>Autorizo o tratamento dos meus dados pessoais facultados, de acordo com a <a href="#">Política de Privacidade</a>.</span>
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer-landscape">
+      <div class="footer-e-mark" aria-hidden="true"></div>
+      <div class="footer-u-mark" aria-hidden="true"></div>
+
+      <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-identity">
+          <img class="footer-logo" src="assets/SocialEquityInitiative-footer.png" alt="Social Equity Initiative — Knowledge-driven progress" />
+        </div>
+
+        <nav class="footer-column" aria-label="Balanço Social">
+          <h2>Balanço Social</h2>
+          <a href="#">Relatórios</a>
+          <a href="#">Dados e Infografias</a>
+          <a href="#">Media</a>
+          <a href="#">Eventos</a>
+          <a href="#">Sobre Nós</a>
+        </nav>
+
+        <nav class="footer-column" aria-label="Links úteis">
+          <h2>Links Úteis</h2>
+          <a href="mailto:pt.balanco.social.kc@novasbe.pt">Contactos</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Política de Cookies</a>
+        </nav>
+      </div>
+
+      <div class="footer-legal">
+        <span>© 2026 Balanço Social. Todos os direitos reservados.</span>
+        <span></span>
+      </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
